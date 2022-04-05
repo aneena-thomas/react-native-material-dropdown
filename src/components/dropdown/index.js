@@ -506,7 +506,9 @@ export default class Dropdown extends PureComponent {
     return (
       <TextField
         label=''
-        labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
+        labelPadding={10}
+
+        // labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
 
         {...props}
 
